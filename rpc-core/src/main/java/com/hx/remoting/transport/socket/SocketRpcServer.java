@@ -1,7 +1,9 @@
 package com.hx.remoting.transport.socket;
 
 import com.hx.provider.ServiceProvider;
+import factory.SingletonFactory;
 import lombok.extern.slf4j.Slf4j;
+import utils.concurrent.threadpool.ThreadPoolFactoryUtils;
 
 import java.util.concurrent.ExecutorService;
 
@@ -12,9 +14,10 @@ import java.util.concurrent.ExecutorService;
 @Slf4j
 public class SocketRpcServer {
     private final ExecutorService threadPool;
-    private final ServiceProvider serviceProvider;
+//    private final ServiceProvider serviceProvider;
 
     public SocketRpcServer() {
-
+        threadPool = ThreadPoolFactoryUtils.createCustomThreadPoolIfAbsent("socket-server-rpc-pool");
+//        serviceProvider = SingletonFactory.getInstance();
     }
 }

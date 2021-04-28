@@ -14,9 +14,19 @@
     <dependencies>
         <dependency>
             <groupId>com.hx</groupId>
-            <artifactId>common</artifactId>
+            <artifactId>rpc-common</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.curator</groupId>
+            <artifactId>curator-recipes</artifactId>
+            <version>${curator-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+
     </dependencies>
 
 

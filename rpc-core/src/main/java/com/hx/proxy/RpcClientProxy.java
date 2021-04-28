@@ -13,7 +13,7 @@ import java.lang.reflect.Method;
 @Slf4j
 public class RpcClientProxy implements InvocationHandler {
     private static final String INTEFACE_NAME = "interfaceName";
-    private final RpcServiceProperties rpcServiceProperties;
+//    private final RpcServiceProperties rpcServiceProperties;
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         return null;
