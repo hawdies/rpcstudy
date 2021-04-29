@@ -14,10 +14,11 @@ import java.util.concurrent.ExecutorService;
 @Slf4j
 public class SocketRpcServer {
     private final ExecutorService threadPool;
-//    private final ServiceProvider serviceProvider;
+    private final ServiceProvider serviceProvider;
 
     public SocketRpcServer() {
         threadPool = ThreadPoolFactoryUtils.createCustomThreadPoolIfAbsent("socket-server-rpc-pool");
-//        serviceProvider = SingletonFactory.getInstance();
+        // todo
+        serviceProvider = SingletonFactory.getInstance();
     }
 }
