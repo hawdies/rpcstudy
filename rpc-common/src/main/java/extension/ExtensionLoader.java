@@ -113,7 +113,7 @@ public final class ExtensionLoader<T> {
             if (urls != null) {
                 while (urls.hasMoreElements()) {
                     URL resourceUrl = urls.nextElement();
-                    laodResource(extensionClasses, classLoader, resourceUrl);
+                    loadResource(extensionClasses, classLoader, resourceUrl);
                 }
             }
         } catch (IOException e) {
@@ -121,7 +121,7 @@ public final class ExtensionLoader<T> {
         }
     }
 
-    private void laodResource(Map<String, Class<?>> extensionClasses, ClassLoader classLoader, URL url) {
+    private void loadResource(Map<String, Class<?>> extensionClasses, ClassLoader classLoader, URL url) {
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream(), StandardCharsets.UTF_8))) {
             String line;
             while ((line = reader.readLine()) != null) {
