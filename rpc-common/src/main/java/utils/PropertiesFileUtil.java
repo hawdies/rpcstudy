@@ -20,7 +20,7 @@ public final class PropertiesFileUtil {
     }
 
     public static Properties readPropertiesFile(String fileName) {
-        URL url = Thread.currentThread().getContextClassLoader().getResource(fileName);
+        URL url = Thread.currentThread().getContextClassLoader().getResource("");
         String rpcConfigPath = "";
         if(url != null) {
             rpcConfigPath = url.getPath() + fileName;

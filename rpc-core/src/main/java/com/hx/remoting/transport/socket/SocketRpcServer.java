@@ -44,10 +44,9 @@ public class SocketRpcServer {
             Socket socket;
             while ((socket = serverSocket.accept()) != null) {
                 log.info("client conected [{}]", socket.getInetAddress());
-                // todo
-
-                threadPool.execute(null);
+                threadPool.execute(new SocketRpcRequestHandlerRunnable(socket));
             }
+            threadPool.shutdown();
         } catch (IOException e) {
             log.error("occur IOException", e);
         }

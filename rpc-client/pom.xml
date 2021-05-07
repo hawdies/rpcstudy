@@ -11,5 +11,18 @@
 
     <artifactId>rpc-client</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.hx</groupId>
+            <artifactId>rpc-api</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.hx</groupId>
+            <artifactId>rpc-core</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
 
 </project>

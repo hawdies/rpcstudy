@@ -12,6 +12,9 @@ public class SingletonFactory {
 
     private static final Map<String, Object> OBJECT_MAP = new ConcurrentHashMap<>();
 
+    private SingletonFactory() {
+
+    }
     public static <T> T getInstance(Class<T> clazz) {
         if (clazz == null) throw new IllegalArgumentException();
         String key = clazz.getName();
