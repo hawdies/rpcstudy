@@ -11,6 +11,22 @@
 
     <artifactId>rpc-core</artifactId>
 
+<!--        <repositories>-->
+<!--            <repository>-->
+<!--                <id>maven</id>-->
+<!--                <name>official</name>-->
+<!--                <url>http://repo1.maven.org/maven2/</url>-->
+<!--            </repository>-->
+<!--        </repositories>-->
+
+<!--    <repositories>-->
+<!--        <repository>-->
+<!--            <id>huaweicloud</id>-->
+<!--            <name>huaweicloud maven</name>-->
+<!--            <url>https://mirrors.huaweicloud.com/repository/maven/</url>-->
+<!--        </repository>-->
+<!--    </repositories>-->
+
     <dependencies>
         <dependency>
             <groupId>com.hx</groupId>
@@ -22,6 +38,13 @@
             <artifactId>curator-recipes</artifactId>
             <version>${curator-version}</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-all -->
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>${netty.version}</version>
+        </dependency>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
