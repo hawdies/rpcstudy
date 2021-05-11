@@ -38,7 +38,6 @@ public class NettyRpcServer {
 
     @SneakyThrows
     public void start() {
-        // todo 2021-05-06
         CustomShutdownHook.getCustomShutdownHook().clearAll();
         String host = InetAddress.getLocalHost().getHostAddress();
         EventLoopGroup bossGroup = new NioEventLoopGroup(1);
