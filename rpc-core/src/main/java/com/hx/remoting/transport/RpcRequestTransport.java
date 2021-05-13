@@ -7,5 +7,5 @@ import com.hx.remoting.dto.RpcRequest;
  * @date 2021/4/27
  **/
 public interface RpcRequestTransport {
-    Object sendRequest(RpcRequest rpcRequest);
+    Object sendRpcRequest(RpcRequest rpcRequest);
 }

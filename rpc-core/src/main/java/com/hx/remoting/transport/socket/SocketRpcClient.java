@@ -30,7 +30,7 @@ public class SocketRpcClient implements RpcRequestTransport {
     }
 
     @Override
-    public Object sendRequest(RpcRequest rpcRequest) {
+    public Object sendRpcRequest(RpcRequest rpcRequest) {
         String rpcServiceName = RpcServiceProperties.builder().serviceName(rpcRequest.getInterfaceName())
                 .group(rpcRequest.getGroup())
                 .version(rpcRequest.getVersion())

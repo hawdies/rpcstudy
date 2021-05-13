@@ -68,8 +68,9 @@ public class RpcClientProxy implements InvocationHandler {
                 .build();
         RpcResponse<Object> rpcResponse = null;
         if (rpcRequestTransport instanceof SocketRpcClient) {
-            rpcResponse = (RpcResponse<Object>) rpcRequestTransport.sendRequest(rpcRequest);
+            rpcResponse = (RpcResponse<Object>) rpcRequestTransport.sendRpcRequest(rpcRequest);
         }
+
         // todo rpcRequestTransport instanceof NettyRpcClient
         // 2021-05-07
 
